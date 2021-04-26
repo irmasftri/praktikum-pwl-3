@@ -1,0 +1,63 @@
+{
+    "case1": {
+        "testcase_name": "field nama kosong",
+        "data": {
+            "name": "",
+            "email": "irmas@gmail.com",
+            "password": "ABCde22",
+            "re-password": "ABCde22"
+        },
+        "expected": {
+            "pesan": "Pendaftaran berhasil!"
+        }
+    },
+
+    "case2": {
+        "testcase_name": "field email tidak sesuai aturan",
+        "data": {
+            "name": "Irma Safitri",
+            "email": "",
+            "password": "ABCde22",
+            "re-password": "ABCde22"
+        },
+        "expected": {
+            "pesan": "Email yang kamu masukkan tidak valid"
+        }
+    },
+    "case3" : {
+        "testcase_name": "field password tidak sesuai aturan",
+        "data": {
+            "name": "Irma Safitri",
+            "email": "irmas@gmail.com",
+            "password": "abcde22",
+            "re-password": "ABCde22"
+        },
+        "expected": {
+            "pesan": "Harap sertakan setidaknya satu huruf | kapital Harap sertakan setidaknya satu angka | Kata sandi setidaknya harus terdiri dari 6 karakter"
+        }
+    },
+    "case4" : {
+        "testcase_name": "isi field re-password tidak sama dengan field password",
+        "data": {
+            "name": "Irma Safitri",
+            "email": "irmas@gmail.com",
+            "password": "ABCde22",
+            "re-password": "ABCde21"
+        },
+        "expected": {
+            "pesan": "Kata sandi yang diberikan tidak cocok"
+        }
+    },
+    "case5" : {
+        "testcase_name": "semua field terisi dengan benar",
+        "data": {
+            "name": "Irma Safitri",
+            "email": "irmas@gmail.com",
+            "password": "ABCde22",
+            "re-password": "ABCde22"
+        },
+        "expected": {
+            "pesan": "Pendaftaran berhasil!"
+        }
+    }
+}
