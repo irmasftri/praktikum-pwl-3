@@ -1,3 +1,3 @@
 # web-otomasi
 
-website otomasi testing menggunakan selenium python.
+website otomasi testing halaman registrasi menggunakan selenium python.
